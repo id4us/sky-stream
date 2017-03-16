@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<dataset>
+	<registered_devices profile_id="123"  	provider="GOOGLE" device_count="1" data='[{"udid":"deviceA","dateAdded":"1401720368650"}]'/>
+	<registered_devices profile_id="1234" 	provider="GOOGLE" device_count="3" data='[{"udid":"deviceB","dateAdded":"1401720368650"}, {"udid":"deviceG","dateAdded":"1401720368650"}]' />
+	<registered_devices profile_id="12345" 	provider="GOOGLE" device_count="6" data='[{"udid":"deviceC","dateAdded":"1401720368650"}]' />
+	<registered_devices profile_id="123456"  provider="APPLE" device_count="7" data='[{"udid":"deviceD","dateAdded":"1401720368650"}, {"udid":"deviceH","dateAdded":"1401720368650"} , {"udid":"deviceI","dateAdded":"1401720368650"}]' />
+	<registered_devices profile_id="1234567" provider="GOOGLE" device_count="8" data='[{"udid":"deviceE","dateAdded":"1401720368650"}]' />
+</dataset>

@@ -1,0 +1,90 @@
+[
+    {
+        "channel": {
+            "id": "1301",
+            "name": "Sky Sports 1",
+            "thumbnail": {
+                "iosImage": "http://mobile-tv.sky.com/skytvservice/static/images/sky_sports_1.png",
+                "iosRetinaImage": "http://mobile-tv.sky.com/skytvservice/static/images/sky_sports_1.png",
+                "androidImage": "https://mobile-tv.sky.com/skytvservice/static/images/75/skysports1.png"
+            }
+        }
+    },
+    {
+        "channel": {
+            "id": "1302",
+            "name": "Sky Sports 2",
+            "thumbnail": {
+                "iosImage": "http://mobile-tv.sky.com/skytvservice/static/images/sky_sports_2.png",
+                "iosRetinaImage": "http://mobile-tv.sky.com/skytvservice/static/images/sky_sports_2.png",
+                "androidImage": "https://stage.mobile-tv.sky.com/skytvservice/static/images/75/skysports2.png"
+            }
+        }
+    },
+    {
+        "channel": {
+            "id": "1333",
+            "name": "Sky Sports 3",
+            "thumbnail": {
+                "iosImage": "http://mobile-tv.sky.com/skytvservice/static/images/sky_sports_3.png",
+                "iosRetinaImage": "http://mobile-tv.sky.com/skytvservice/static/images/sky_sports_3.png",
+                "androidImage": "https://stage.mobile-tv.sky.com/skytvservice/static/images/75/skysports3.png"
+            }
+        }
+    },
+    {
+        "channel": {
+            "id": "1322",
+            "name": "Sky Sports 4",
+            "thumbnail": {
+                "iosImage": "http://mobile-tv.sky.com/skytvservice/static/images/sky_sports_4.png",
+                "iosRetinaImage": "http://mobile-tv.sky.com/skytvservice/static/images/sky_sports_4.png",
+                "androidImage": "https://stage.mobile-tv.sky.com/skytvservice/static/images/75/skysports4.png"
+            }
+        }
+    },
+    {
+        "channel": {
+            "id": "1306",
+            "name": "Sky Sports F1",
+            "thumbnail": {
+                "iosImage": "http://stage.mobile-tv.sky.com/skytvservice/static/images/f1.png",
+                "iosRetinaImage": "http://stage.mobile-tv.sky.com/skytvservice/static/images/f1.png",
+                "androidImage": "http://mobile-tv.sky.com/skytvservice/static/images/75/f1.png"
+            }
+        }
+    },
+    {
+        "channel": {
+            "id": "1314",
+            "name": "Sky Sports News",
+            "thumbnail": {
+                "iosImage": "http://mobile-tv.sky.com/skytvservice/static/images/sky_sports_news.png",
+                "iosRetinaImage": "http://mobile-tv.sky.com/skytvservice/static/images/sky_sports_news.png",
+                "androidImage": "https://stage.mobile-tv.sky.com/skytvservice/static/images/75/skysportsnews.png"
+            }
+        }
+    },
+    {
+        "channel": {
+            "id": "1404",
+            "name": "Sky News",
+            "thumbnail": {
+                "iosImage": "http://stage.mobile-tv.sky.com/skytvservice/static/images/sky_news.png",
+                "iosRetinaImage": "http://stage.mobile-tv.sky.com/skytvservice/static/images/sky_news.png",
+                "androidImage": "https://stage.mobile-tv.sky.com/skytvservice/static/images/75/SkyNews.png"
+            }
+        }
+    },
+    {
+        "channel": {
+            "id": "1833",
+            "name": "Sky 2",
+            "thumbnail": {
+                "iosImage": "http://mobile-tv.sky.com/skytvservice/static/images/45/espn-iphone4.jpg",
+                "iosRetinaImage": "http://mobile-tv.sky.com/skytvservice/static/images/45/espn-iphone4.jpg",
+                "androidImage": "http://mobile-tv.sky.com/skytvservice/static/images/75/espn-iphone4.jpg"
+            }
+        }
+    }
+]

@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<dataset>
+	<subscriptions profile_id="123"  provider="GOOGLE" product_id="c" expiry="2014-12-20" activated="1" created="2014-12-20" updated="2014-12-20"/>
+	<subscriptions profile_id="123"  provider="GOOGLE" product_id="a" expiry="2014-12-19" activated="1" created="2014-12-20" updated="2014-12-20"/>
+	<subscriptions profile_id="1234" provider="GOOGLE" product_id="b" expiry="2014-11-05" activated="true" created="2014-12-20" updated="2014-12-20"/>
+	<subscriptions profile_id="1236" provider="GOOGLE" product_id="d" expiry="2014-10-08" activated="0" created="2014-12-20" updated="2014-12-20"/>
+	<subscriptions profile_id="123"  provider="GOOGLE" product_id="g" expiry="2014-12-14" activated="0" created="2014-12-20" updated="2014-12-20"/>
+	<subscriptions profile_id="123"  provider="APPLE" product_id="c" expiry="2014-12-20" activated="1" created="2014-12-20" updated="2014-12-20"/>
+	<subscriptions profile_id="123"  provider="VODAFONE" product_id="a" expiry="2014-12-19" activated="1" created="2014-12-20" updated="2014-12-20"/>
+</dataset>

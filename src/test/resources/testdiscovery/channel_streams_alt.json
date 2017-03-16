@@ -1,0 +1,16 @@
+[
+   {
+     "channelId": "1301",
+     "name":"Sky Sports 1 ALT",
+     "keyPath" : "/key/*",
+     "playlist":"http://poc-content.mobile-tv.sky.com/content/ss1a/ss1a.m3u8",
+     "playlistPath" :"/content/ss1a/*!"
+   },
+   {
+     "channelId": "1302",
+     "name":"Sky Sports 2",
+     "keyPath" : "/key/*",
+     "playlist":"http://poc-content.mobile-tv.sky.com/content/ss2/ss2.m3u8",
+     "playlistPath" :"/content/ss2/*!"
+   }
+ ]

@@ -1,0 +1,45 @@
+{
+    "id": {
+        "profileid": "1234567",
+        "partyid": "abc123"
+    },
+    "services": {
+        "email": {
+            "servicename": "email",
+            "termsandconditionsaccepted": "14-02-2012",
+            "suspended": false
+        },
+        "chat": {
+            "servicename": "chat",
+            "termsandconditionsaccepted": "14-02-2012",
+            "suspended": false
+        },
+        "calendar": {
+            "servicename": "calendar",
+            "termsandconditionsaccepted": "14-02-2012",
+            "suspended": false
+        }
+    },
+    "details": {
+        "usertype": "primary",
+        "username": "SS11_UAT",
+        "firstname": "Sky",
+        "title": "Mr",
+        "lastname": "Sports",
+        "authorised": true,
+        "display": {
+            "name": null,
+            "location": ""
+        }
+    },
+    "marketing": {
+        "targetedoptin": true,
+        "skyoptin": true,
+        "targetedoptindate": "14-02-2012",
+        "targetedoptoutdate": null
+    },
+    "registration": {
+        "termsandconditionsaccepted": true,
+        "date": "14-02-201212: 04: 49"
+    }
+}

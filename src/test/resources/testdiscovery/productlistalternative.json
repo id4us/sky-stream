@@ -1,0 +1,32 @@
+[
+    {
+            "name": "alt.pack.1",
+            "description": "fiction product 1",
+            "subscriptionProvider":"vodafone",                        
+            "channels": [
+                {
+                    "channelid": "1",
+                    "channelName": "Sky Sports 1"
+                },
+                {
+                    "channelid": "2",
+                    "channelName": "Sky Sports 2"
+                },
+                {
+                    "channelid": "3",
+                    "channelName": "Sky Sports News"
+                }
+            ]
+    },
+    {
+            "name": "alt.pack.2",
+            "description": "fiction product 2",
+            "subscriptionProvider":"vodafone",                        
+            "channels": [
+                {
+                    "channelid": "5",
+                    "channelName": "Sky cricket"
+                }
+            ]
+    }
+]

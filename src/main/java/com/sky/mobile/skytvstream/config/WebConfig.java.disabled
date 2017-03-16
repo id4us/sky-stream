@@ -1,0 +1,73 @@
+package com.sky.mobile.skytvstream.config;
+
+import java.io.IOException;
+
+import net.spy.memcached.AddrUtil;
+import net.spy.memcached.MemcachedClient;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
+import org.springframework.context.annotation.ScopedProxyMode;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
+
+import com.google.common.eventbus.EventBus;
+import com.sky.mobile.skytvstream.domain.AuthenticatedPerson;
+import com.sky.mobile.skytvstream.service.templates.StaticFileService;
+import com.sky.web.utils.SystemTimeProviderImpl;
+import com.sky.web.utils.TimeProvider;
+
+@Configuration
+@EnableWebMvc
+public class WebConfig extends WebMvcConfigurationSupport {
+
+
+	
+	
+	@Value("#{configProperties['memcache.server.nodes']}")
+	private String memcachedHosts;
+
+
+	@Bean(name = "timeProvider")
+	TimeProvider getTimeProvider() {
+		return new SystemTimeProviderImpl();
+	}
+
+	@Bean(name = "currentAuthUser")
+	@Scope(value = "request", proxyMode = ScopedProxyMode.TARGET_CLASS)
+	public AuthenticatedPerson getOauthPerson() {
+		return new AuthenticatedPerson();
+	}
+	
+	@Bean(name = "discoveryService")
+	public StaticFileService getDiscoveryService(StreamConfig config, EventBus eventBus) throws IOException {
+		StaticFileService discoveryService = new StaticFileService(config, StreamConfig.DISCOVERY_KEY, eventBus);
+		return discoveryService;
+	}
+
+	@Bean(name = "allChannelsService")
+	public StaticFileService getAllChannelsService(StreamConfig config, EventBus eventBus) throws IOException {
+		StaticFileService allChannelsService = new StaticFileService(config, StreamConfig.ALL_CHANNELS_KEY, eventBus);
+		return allChannelsService;
+	}
+	
+	@Bean(name = "propertySetterWhitelistService")
+	public StaticFileService getPropertySetterWhitelistService(StreamConfig config, EventBus eventBus) throws IOException {
+		StaticFileService staticFileService = new StaticFileService(config, StreamConfig.PROPERTY_SETTER_WHITELIST, eventBus);
+		return staticFileService;
+	}
+
+
+	@Bean
+	public MemcachedClient getMemcacheInstace() throws IOException {
+		return new MemcachedClient(AddrUtil.getAddresses(memcachedHosts));
+		
+	}
+
+	@Bean
+	public EventBus eventBus() {
+		return new EventBus();
+	}
+}

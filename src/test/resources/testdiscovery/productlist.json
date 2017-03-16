@@ -1,0 +1,290 @@
+[
+    {
+            "name": "subscription.test.monthly.pack1",
+            "description": "google play product",
+            "subscriptionProvider":"google",
+            "available":"true",
+            "displayCost":"£4.99",
+            "displayText":"Sky Sports TV Pack 1",
+            "channels": [
+                {
+                    "channelid": "1301",
+                    "channelName": "Sky Sports 1"
+                },
+                {
+                    "channelid": "1302",
+                    "channelName": "Sky Sports 2"
+                },
+                {
+                    "channelid": "1314",
+                    "channelName": "Sky Sports News"
+                }
+            ]
+    },
+    {
+            "name": "subscription.test.monthly.pack2",
+            "description": "google play product",
+            "subscriptionProvider":"google",
+            "available":"true",
+            "displayCost":"£9.99",
+            "displayText":"Sky Sports TV Pack 2",
+            "channels": [
+                {
+                    "channelid": "1301",
+                    "channelName": "Sky Sports 1"
+                },
+                {
+                    "channelid": "1302",
+                    "channelName": "Sky Sports 2"
+                },
+                {
+                    "channelid": "1314",
+                    "channelName": "Sky Sports News"
+                },
+                {
+                    "channelid": "1322",
+                    "channelName": "Sky Sports 4"
+                },
+                {
+                    "channelid": "3141",
+                    "channelName": "ESPN"
+                },
+                {
+                    "channelid": "1833",
+                    "channelName": "Sky 2"
+                },
+                {
+                    "channelid": "1404",
+                    "channelName": "Sky News"
+                },
+                {
+                    "channelid": "1333",
+                    "channelName": "Sky Sports 3"
+                },
+                {
+                    "channelid": "1354",
+                    "channelName": "At The Races"
+                },
+                {
+                    "channelid": "1306",
+                    "channelName": "Sky Sports F1"
+                }
+            ]
+    },
+    {
+            "name": "com.bskyb.skysportstv.iap.monthly.pack1",
+            "description": "apple store product",
+            "subscriptionProvider":"apple",
+            "available":"true",
+            "displayCost":"£4.99",
+            "displayText":"Sky Sports TV Pack 1",
+            
+            "channels": [
+                {
+                    "channelid": "1301",
+                    "channelName": "Sky Sports 1"
+                },
+                {
+                    "channelid": "1302",
+                    "channelName": "Sky Sports 2"
+                }
+            ]
+    },
+    {
+            "name": "com.bskyb.skysportstv.iap.monthly.pack2",
+            "description": "apple store product",
+            "subscriptionProvider":"apple",
+            "available":"true",
+            "displayCost":"£9.99",
+            "displayText":"Sky Sports TV Pack 2",
+            
+            "channels": [
+                {
+                    "channelid": "1301",
+                    "channelName": "Sky Sports 1"
+                },
+                {
+                    "channelid": "1302",
+                    "channelName": "Sky Sports 2"
+                },
+                {
+                    "channelid": "1314",
+                    "channelName": "Sky Sports News"
+                },
+                {
+                    "channelid": "1322",
+                    "channelName": "Sky Sports 4"
+                },
+                {
+                    "channelid": "3141",
+                    "channelName": "ESPN"
+                },
+                {
+                    "channelid": "1833",
+                    "channelName": "Sky 2"
+                },
+                {
+                    "channelid": "1404",
+                    "channelName": "Sky News"
+                },
+                {
+                    "channelid": "1333",
+                    "channelName": "Sky Sports 3"
+                },
+                {
+                    "channelid": "1354",
+                    "channelName": "At The Races"
+                },
+                {
+                    "channelid": "1306",
+                    "channelName": "Sky Sports F1"
+                }
+            ]
+    },
+    {
+            "name": "com.bskyb.skysportstv.iap.monthly",
+            "description": "apple store legacy product",
+            "subscriptionProvider":"apple",
+            "available":"false",
+            "displayCost":"£9.99",
+            "displayText":"Sky Sports TV",            
+            "channels": [
+                {
+                    "channelid": "3141",
+                    "channelName": "ESPN"
+                },
+                {
+                    "channelid": "1354",
+                    "channelName": "At The Races"
+                },
+                {
+                    "channelid": "1314",
+                    "channelName": "Sky Sports News"
+                },
+                {
+                    "channelid": "1404",
+                    "channelName": "Sky News"
+                },
+                {
+                    "channelid": "1306",
+                    "channelName": "Sky Sports F1"
+                },
+                {
+                    "channelid": "1301",
+                    "channelName": "Sky Sports 1"
+                },
+                {
+                    "channelid": "1322",
+                    "channelName": "Sky Sports 4"
+                },
+                {
+                    "channelid": "1302",
+                    "channelName": "Sky Sports 2"
+                },
+                {
+                    "channelid": "1333",
+                    "channelName": "Sky Sports 3"
+                }
+            ]
+    },
+    {
+    		
+            "description": "google play legacy product",
+            "name": "android.legacy.pack",
+            "subscriptionProvider":"google",
+            "available":"false",
+            "displayCost":"£9.99",
+            "displayText":"Sky Sports TV",            
+            "channels": [
+                {
+                    "channelid": "1306",
+                    "channelName": "Sky Sports F1"
+                },
+                {
+                    "channelid": "1404",
+                    "channelName": "Sky News"
+                },
+                {
+                    "channelid": "1322",
+                    "channelName": "Sky Sports 4"
+                },
+                {
+                    "channelid": "1301",
+                    "channelName": "Sky Sports 1"
+                },
+                {
+                    "channelid": "1333",
+                    "channelName": "Sky Sports 3"
+                },
+                {
+                    "channelid": "3141",
+                    "channelName": "ESPN"
+                },
+                {
+                    "channelid": "1314",
+                    "channelName": "Sky Sports News"
+                },
+                {
+                    "channelid": "1302",
+                    "channelName": "Sky Sports 2"
+                }
+            ]
+    },
+    {
+            "name": "com.bskyb.sstv.vd.monthly.pack1",
+            "description": "vodafone product",
+            "subscriptionProvider":"vodafone",                        
+            "channels": [
+                {
+                    "channelid": "1301",
+                    "channelName": "Sky Sports 1"
+                },
+                {
+                    "channelid": "1302",
+                    "channelName": "Sky Sports 2"
+                },
+                {
+                    "channelid": "1314",
+                    "channelName": "Sky Sports News"
+                }
+            ]
+    },
+    {
+            "name": "com.bskyb.sstv.vd.monthly.pack2",
+            "description": "vodafone product",
+            "subscriptionProvider":"vodafone",            
+            "channels": [
+                {
+                    "channelid": "1301",
+                    "channelName": "Sky Sports 1"
+                },
+                {
+                    "channelid": "1302",
+                    "channelName": "Sky Sports 2"
+                },
+                {
+                    "channelid": "1314",
+                    "channelName": "Sky Sports News"
+                }
+            ]
+    },
+    {
+            "name": "com.bskyb.sstv.vd.monthly.bolton",
+            "description": "vodafone product",
+            "subscriptionProvider":"vodafone",            
+            "channels": [
+                {
+                    "channelid": "1301",
+                    "channelName": "Sky Sports 1"
+                },
+                {
+                    "channelid": "1302",
+                    "channelName": "Sky Sports 2"
+                },
+                {
+                    "channelid": "1314",
+                    "channelName": "Sky Sports News"
+                }
+            ]
+    }
+]

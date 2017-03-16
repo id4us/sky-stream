@@ -1,0 +1,68 @@
+buildscript {
+    ext {
+        springBootVersion = '1.1.5.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse-wtp'
+apply plugin: 'idea'
+apply plugin: 'spring-boot' 
+apply plugin: 'war'
+
+
+war {
+    baseName = 'cis-sstv-streaming'
+    version =  '0.0.1-SNAPSHOT'
+}
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+repositories {
+    mavenCentral()
+}
+
+configurations {
+    providedRuntime
+}
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework.boot:spring-boot-starter-jdbc")
+    providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
+    testCompile("org.springframework.boot:spring-boot-starter-test")
+    providedRuntime("mysql:mysql-connector-java")
+    compile 'joda-time:joda-time:2.3'
+    compile 'com.google.guava:guava:17.0'
+    compile 'net.spy:spymemcached:2.11.2'
+    compile 'org.apache.commons:commons-lang3:3.3.2'
+    compile 'org.codehaus.jackson:jackson-mapper-asl:1.9.13'
+    compile 'commons-io:commons-io:2.4'
+    compile 'org.apache.httpcomponents:httpclient:4.3.4'
+    testCompile 'org.dbunit:dbunit:2.5.0'
+    testCompile 'com.github.springtestdbunit:spring-test-dbunit:1.1.0'
+    testCompile 'org.easymock:easymock:3.2'
+
+    
+    
+    
+    compile group:'net.sf.json-lib', name:'json-lib', version:'2.4', classifier:'jdk15'
+}
+
+eclipse {
+    classpath {
+         containers.remove('org.eclipse.jdt.launching.JRE_CONTAINER')
+         containers 'org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7'
+    }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.12'
+}

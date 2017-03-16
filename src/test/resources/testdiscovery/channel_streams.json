@@ -1,0 +1,58 @@
+[
+   {
+     "channelId": "1301",
+     "name":"Sky Sports 1",
+     "keyPath" : "/key/*",
+     "playlist":"http://poc-content.mobile-tv.sky.com/content/ss1/ss1.m3u8",
+     "playlistPath" :"/content/ss1/*!"
+   },
+   {
+     "channelId": "1302",
+     "name":"Sky Sports 2",
+     "keyPath" : "/key/*",
+     "playlist":"http://poc-content.mobile-tv.sky.com/content/ss2/ss2.m3u8",
+     "playlistPath" :"/content/ss2/*!"
+   },
+   {
+     "channelId": "1333",
+     "name":"Sky Sports 3",
+     "keyPath" : "/key/*",
+     "playlist":"http://poc-content.mobile-tv.sky.com/content/ss3/ss3.m3u8",
+     "playlistPath" :"/content/ss3/*!"
+   },
+   {
+     "channelId": "1322",
+     "name":"Sky Sports 4",
+     "keyPath" : "/key/*",
+     "playlist":"http://poc-content.mobile-tv.sky.com/content/ss4/ss4.m3u8",
+     "playlistPath" :"/content/ss4/*!"
+   },
+   {
+     "channelId": "1303",
+     "name":"Sky Sports 5",
+     "keyPath" : "/key/*",
+     "playlist":"http://skydvn-ssmtv-mobile-prod.mobile-tv.sky.com/ssmtv-skysports5/1303/ss5.m3u8",
+     "playlistPath" :"/ssmtv-skysports5/1303/*"
+   },
+   {
+     "channelId": "1306",
+     "name":"Sky Sports F1",
+     "keyPath" : "/key/*",
+     "playlist":"http://poc-content.mobile-tv.sky.com/content/ssf1/ssf1.m3u8",
+     "playlistPath" :"/content/ssf1/*!"
+   },
+   {
+     "channelId": "1314",
+     "name":"Sky Sports News HQ",
+     "keyPath" : "/key/*",
+     "playlist":"http://poc-content.mobile-tv.sky.com/content/ssn/ssn.m3u8",
+     "playlistPath" :"/content/ssn/*!"
+   },
+   {
+     "channelId": "1404",
+     "name":"Sky News",
+     "keyPath" : "/key/*",
+     "playlist":"http://poc-content.mobile-tv.sky.com/content/sn/sn.m3u8",
+     "playlistPath" :"/content/sn/*!"
+   }
+ ]
