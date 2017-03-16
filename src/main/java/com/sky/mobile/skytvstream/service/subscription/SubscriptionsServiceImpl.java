@@ -68,13 +68,7 @@ public class SubscriptionsServiceImpl implements SubscriptionsService {
         final DateTime now = timeProvider.getDateTime();
         List<SubscriptionVo> filtered = Lists.newArrayList
                 (Iterators.filter(
-                        subscriptions.iterator(), new Predicate<SubscriptionVo>() {
-                            @Override
-                            public boolean apply(SubscriptionVo input) {
-                                return new DateTime(input.getExpiry()).isAfter(now);
-                            }
-
-                        }));
+                        subscriptions.iterator(), (input) -> new DateTime(input.getExpiry()).isAfter(now)));
         return filtered;
     }
 
@@ -156,7 +150,7 @@ public class SubscriptionsServiceImpl implements SubscriptionsService {
         final DateTime now = timeProvider.getDateTime();
         Collection<SubscriptionVo> subscriptionsToBeUpdated = new ArrayList<SubscriptionVo>();
 
-        Date lastUpdated = null;
+        Date lastUpdated;
         for (SubscriptionVo sub : subscriptions) {
             lastUpdated = subsDao.getLastUpdated(sub);
             DateTime dateTime = new DateTime(lastUpdated);

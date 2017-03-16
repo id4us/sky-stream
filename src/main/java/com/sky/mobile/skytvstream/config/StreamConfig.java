@@ -1,5 +1,7 @@
 package com.sky.mobile.skytvstream.config;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import java.io.IOException;
 
 public interface StreamConfig {

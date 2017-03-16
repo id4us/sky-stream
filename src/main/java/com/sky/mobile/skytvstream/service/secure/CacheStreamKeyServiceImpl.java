@@ -16,7 +16,7 @@ public class CacheStreamKeyServiceImpl implements StreamKeyService {
 
     private static final Logger LOG = LoggerFactory.getLogger(CacheStreamKeyServiceImpl.class);
 
-    private static final long TIME_INTERVAL = 60000l;
+    private static final long TIME_INTERVAL = 60000L;
 
     private final PersistStream persistStream;
     private final CryptoFactory cryptoFactory;

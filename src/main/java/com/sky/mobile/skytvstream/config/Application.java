@@ -102,36 +102,36 @@ public class Application  extends WebMvcConfigurerAdapter {
 
 
 	@Bean(name = "discoveryService")
-	public StaticFileService getDiscoveryService(StreamConfig config) throws IOException {
-		StaticFileService discoveryService = new StaticFileService(config,
+	public StaticFileService getDiscoveryService(StreamConfig streamConfigImpl) throws IOException {
+		StaticFileService discoveryService = new StaticFileService(streamConfigImpl,
 				StreamConfig.DISCOVERY_KEY);
 		return discoveryService;
 	}
 
 	@Bean(name = "allChannelsService")
-	public StaticFileService getAllChannelsService(StreamConfig config) throws IOException {
-		StaticFileService allChannelsService = new StaticFileService(config,
+	public StaticFileService getAllChannelsService(StreamConfig streamConfigImpl) throws IOException {
+		StaticFileService allChannelsService = new StaticFileService(streamConfigImpl,
 				StreamConfig.ALL_CHANNELS_KEY);
 		return allChannelsService;
 	}
 
 	@Bean(name = "allChannelsServiceRoi")
-	public StaticFileService getAllChannelsServiceRoi(StreamConfig config) throws IOException {
-		StaticFileService allChannelsServiceRoi = new StaticFileService(config,
+	public StaticFileService getAllChannelsServiceRoi(StreamConfig streamConfigImpl) throws IOException {
+		StaticFileService allChannelsServiceRoi = new StaticFileService(streamConfigImpl,
 				StreamConfig.ALL_CHANNELS_KEY_ROI);
 		return allChannelsServiceRoi;
 	}
 
     @Bean(name = "packageList")
-    public StaticFileService getPackageList(StreamConfig config) throws IOException {
-        StaticFileService packageService = new StaticFileService(config,
+    public StaticFileService getPackageList(StreamConfig streamConfigImpl) throws IOException {
+        StaticFileService packageService = new StaticFileService(streamConfigImpl,
                 StreamConfig.PACKAGE_LIST);
         return packageService;
     }
 
     @Bean(name = "packageListRoi")
-    public StaticFileService getPackageListRoi(StreamConfig config) throws IOException {
-        StaticFileService packageService = new StaticFileService(config,
+    public StaticFileService getPackageListRoi(StreamConfig streamConfigImpl) throws IOException {
+        StaticFileService packageService = new StaticFileService(streamConfigImpl,
                 StreamConfig.PACKAGE_LIST_ROI);
         return packageService;
     }
