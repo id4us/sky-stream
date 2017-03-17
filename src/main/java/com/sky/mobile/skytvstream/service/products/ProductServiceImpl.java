@@ -78,28 +78,23 @@ public class ProductServiceImpl implements ProductService, ApplicationListener<R
             Collection<SubscriptionVo> subscriptionVoList,
             SubscriptionProvider subscriptionProvider) {
 
-        for (SubscriptionVo subscriptionVo : subscriptionVoList) {
-            String productName = subscriptionVo.getProductId();
-
-            Optional<ProductVo> productOption = productsDao
-                    .getProductsByName(productName);
-            if (productOption.isPresent() && subscriptionVo.getExpiry().after(timeProvider.getDate())) {
-                userPurchasableProductsVo.addToSubscribed(productOption.get());
-            }
-        }
+        subscriptionVoList.parallelStream()
+                .filter(subscriptionVo1 -> subscriptionVo1.getExpiry().after(timeProvider.getDate()))
+                .map(subscriptionVo -> subscriptionVo.getProductId())
+                .map(p -> productsDao.getProductsByName(p))
+                .map(productVoOptional -> productVoOptional.get())
+                .map(productVoOptional -> { userPurchasableProductsVo.addToSubscribed(productVoOptional);return 1;}).count();
 
         Collection<ProductVo> productVoList = productsDao.getAllProducts();
 
-        for (ProductVo productVo : productVoList) {
-            boolean isSameProvider = productVo.getSubscriptionProvider().equalsIgnoreCase(subscriptionProvider.toString());
-            SimpleProductVo simpleProductVo = new SimpleProductVo(productVo);
-            if (productVo.isAvailable()
-                    && isSameProvider
-                    && !userPurchasableProductsVo.getSubscribed().contains(
-                    simpleProductVo)) {
-                userPurchasableProductsVo.addToNotSubscribed(simpleProductVo);
-            }
-        }
+          productVoList.stream().filter(p->p.isAvailable())
+                .filter(p -> !userPurchasableProductsVo.getSubscribed().contains(new SimpleProductVo(p)))
+                .filter(productVo -> productVo.getSubscriptionProvider().equalsIgnoreCase(subscriptionProvider.toString()))
+                .map(productVoOptional -> {
+                    userPurchasableProductsVo.addToNotSubscribed(productVoOptional);
+                    return 1;
+                })
+                .count();
     }
 
     private Optional<ProductDetails> getLegacyPack(
